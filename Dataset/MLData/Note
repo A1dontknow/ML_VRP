@@ -1,0 +1,4 @@
+CVRP.txt: File cũ đã bỏ
+CVRP_test.txt: Không đáng quan tâm
+CVRP_true.txt: File data chứa 60k điểm dữ liệu cho 30k instance
+CVRP_N_2000.txt: File data chứa 4k điểm dữ liệu với 2k instance (số khách hàng >= 70)

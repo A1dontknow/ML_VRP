@@ -1,0 +1,39 @@
+Target: CVRP.txt
+
+Logistic Regression: Extreme Fast
+    penalty = 'l1'
+
+    Train Accuracy: 0.654227198009685
+    Test Accuracy: 0.6575369852059176
+
+SVM: Very slow
+    C=0.35,
+    gamma=0.05,
+    kernel='rbf'
+
+    Train Accuracy: 0.6779066151317251
+    Test Accuracy: 0.6851259496201519
+
+
+XGBoost: Fast
+    colsample_bylevel=0.3,      # 0.1 - 1
+    colsample_bytree=0.45,      # 0.1 - 1
+    subsample=0.8,              # 0.8 - 1
+    max_depth=16,               # 2 - 30
+    min_child_weight=100,       # [1, 5, 100]
+    reg_alpha=4.01,             # [1, 4.01, 10, 100]
+    reg_lambda=1,               # [1, 5.51, 10, 100]
+    # Learn param
+    booster='gbtree',
+    learning_rate=0.07,
+    n_estimators=150,
+    objective='binary:logistic',
+    eval_metric='logloss',
+    use_label_encoder=False,
+
+    Train Accuracy: 0.7008085654627038
+    Test Accuracy: 0.6809276289484206
+
+
+
+
